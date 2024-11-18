@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #264969; /* Indigo Dye */
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    position: relative;
+}
+
+#hamburger {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #B4CDE4; /* Columbia Blue */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #00008B; /* Dark Blue */
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Main Layout */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+main figure {
+    margin: 0;
+    text-align: center;
+}
+
+main figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+main figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Small Screens: Mobile View */
+@media (max-width: 768px) {
+    #hamburger {
+        display: block; /* Show hamburger menu button */
+    }
+
+    nav ul {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        background-color: #264969;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 1rem 0;
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    main {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+}
+
+/* Large Screens: Desktop View */
+@media (min-width: 769px) {
+    nav ul {
+        display: flex; /* Horizontal menu */
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    }
+}
