@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discover Mexico</title>
+    <meta name="description" content="Explore the vibrant landscapes and culture of Mexico.">
+    <meta name="author" content="Sergio Nieto">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Discover Mexico</h1>
+    </header>
+    <main>
+        <!-- Hero Image Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/mexico-small.webp" media="(max-width: 600px)" type="image/webp">
+                <source srcset="images/mexico-medium.webp" media="(max-width: 1024px)" type="image/webp">
+                <source srcset="images/mexico-large.webp" type="image/webp">
+                <img src="images/mexico-large.webp" alt="A breathtaking view of Mexico's natural landscape">
+            </picture>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <!-- Add the weather icon -->
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+            <p>Temperature: <span id="temp">25°C</span></p>
+            <p>Wind Speed: <span id="windSpeed">15 km/h</span></p>
+            <p>Wind Chill: <span id="windChill">Calculating...</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span>. Last Updated: <span id="lastUpdated"></span>.</p>
+    </footer>
+</body>
+</html>
