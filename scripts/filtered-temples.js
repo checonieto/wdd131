@@ -75,7 +75,7 @@ const temples = [
         dedicated: "2015, December, 13",
         area: 28192,
         imageUrl:
-            "https://churchofjesuschristtemples.org/media/temples/tijuana-mexico-temple/exterior/tijuana-mexico-temple-5.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/tijuana-mexico-temple/tijuana-mexico-temple-11078.jpg"
     },
     {
         templeName: "San Diego California",
@@ -83,7 +83,7 @@ const temples = [
         dedicated: "1993, April, 30",
         area: 72_000,
         imageUrl:
-            "https://churchofjesuschristtemples.org/media/temples/san-diego-california-temple/exterior/san-diego-california-temple1.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-52302.jpg"
     },
     {
         templeName: "Rexburg Idaho",
@@ -91,7 +91,7 @@ const temples = [
         dedicated: "2008, February, 10",
         area: 57_504,
         imageUrl:
-            "https://churchofjesuschristtemples.org/media/temples/rexburg-idaho-temple/exterior/rexburg-idaho-temple1.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/rexburg-idaho-temple/rexburg-idaho-temple-33444.jpg"
     }
     ];
 
